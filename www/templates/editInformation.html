@@ -1,0 +1,36 @@
+<ion-view title="Edit Information" id="page12">
+  <ion-nav-buttons side="right" class="has-header">
+    <button class="button icon ion-android-home"></button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+    <div class="spacer" style="width: 300px; height: 37px;"></div>
+    <form id="editInformation-form13" class="list">
+
+      <form name="CustomerForm">
+      <label class="item item-input" id="editInformation-input7">
+        <span class="input-label">Name</span>
+        <input type="text" placeholder="Judy Lawrence" ng-model="registerData.username">
+      </label>
+
+      <div class="spacer" style="width: 300px; height: 9px;"></div>
+      <label class="item item-input" id="editInformation-input8">
+        <span class="input-label">National ID</span>
+        <input type="number" placeholder="110256259854" ng-model="registerData.nationalid">
+      </label>
+
+      <div class="spacer" style="width: 300px; height: 9px;"></div>
+      <label class="item item-input" id="editInformation-input9">
+        <span class="input-label">Phone Number</span>
+        <input type="tel" placeholder="089-235-98XX" ng-model="registerDate.phonenumber">
+      </label>
+      <div class="spacer" style="width: 300px; height: 9px;"></div>
+      <label class="item item-input" id="editInformation-input10">
+        <span class="input-label">E-mail</span>
+        <input type="email" placeholder="" ng-model="registerData.email">
+      </label>
+    </form>
+    <div class="spacer" style="width: 300px; height: 21px;"></div>
+    <a ui-sref="complete" id="editInformation-button20" class="button button-positive  button-block">Confirm</a>
+  </form>
+  </ion-content>
+</ion-view>

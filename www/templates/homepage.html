@@ -1,0 +1,49 @@
+<ion-view title="Homepage" hide-back-button="true" id="page1" style="background-color:#FFFFFF;">
+    <ion-nav-buttons side="right" class="has-header">
+            <button class="button icon ion-android-home"></button>
+    </ion-nav-buttons>
+    
+    <ion-content padding="true" class="bckground.scroll">
+        
+        <!--  <ion-list>
+        <ion-item ng-repeat="b in vm.birthdays" ng-click="vm.showEditBirthdayModal(b)">
+          <div style="float: left">{{ b.Name }}</div>
+          <div style="float: right">{{ b.Date | date:"dd MMMM yyyy" }}</div>
+        </ion-item>
+      </ion-list> 
+
+ <div class="list list-inset">
+          <label class="item item-input">
+          <input type="text" placeholder="Name" ng-model="birthday.Name">
+          </label>
+          <label class="item item-input">
+          <input type="date" placeholder="Birthday" ng-model="birthday.Date">
+          </label>
+        </div>
+        <div class="padding">
+          <button ng-click="saveBirthday()" class="button button-block button-positive activated">Save</button>
+        </div>
+ -->
+<!--
+        
+        <ion-slides options="{'loop': true}" slider="slider1" id="homepage-slider1">
+            <ion-slide-page id="homepage-slide26" style="background:url(&quot;img/c82f477286b3a371f6c0502476c849fe.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+            <ion-slide-page id="homepage-slide25" style="background:url(&quot;img/Atmosphere-Resorts-Spa-Luxury-Resort.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+            <ion-slide-page id="homepage-slide24" style="background:url(&quot;img/106_Encore_Resort_Suite_Russell_MacMasters.jpgh540laenw1001vs1d20151105T153119&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+        </ion-slides>
+-->
+
+        <div class="spacer" style="width: 300px; height: 200px;"></div>
+        
+        <a ui-sref="date" id="homepage-button7" class="button button-large button-block button-stable button-outline">Reserve</a>
+        <a ng-hide="checklogin()" ui-sref="register" id="homepage-button7" class="button button-large button-block button-stable button-outline">Register</a>
+        <a ng-hide="checklogin()" ui-sref="login" id="homepage-button2" class="button button-large button-login button-block button-stable button-outline">Login</a>
+
+        
+       
+        <a ng-show="checklogin()" ng-click="toPreviousorder()" id="homepage-button8" class="button button-large button-block button-stable button-outline">Previous Reservation</a>
+        <!--<a ui-sref="information" id="homepage-button19" class="button button-energized  button-block">Edit Your Information</a>-->
+<!--        <a ng-show="checklogin()" ui-sref="cancelOrder" id="homepage-button9" class="button button-dark  button-block">Cancel Reservation</a>-->
+        <button ng-show="checklogin()" ng-click="logout()" id="homepage-button9" class="button button-large button-block button-stable button-outline">Logout</button>
+    </ion-content>
+</ion-view>

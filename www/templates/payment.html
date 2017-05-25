@@ -1,0 +1,36 @@
+<ion-view title="Payment" id="page6">
+    <ion-nav-buttons side="right" class="has-header">
+        <button ng-click="backhome()" class="button icon ion-android-home"></button>
+    </ion-nav-buttons>
+    <ion-content padding="true" class="has-header">
+        
+        <h3 style="margin-top:150px; margin-left:5px; color:white;">Select payment medthod</h3>
+        
+        <div class="spacer"  style="height: 20px;">
+<!--        <div class="item item-body" id="payment-list-item-container6" >-->
+
+            <!--<div id="payment-markdown12" class="show-list-numbers-and-dots">-->
+            <!--<p style="margin-top:0px;color:#000000;">Order No.: {{orderno}}</p>-->
+            <!--</div>-->
+
+            <label class="item item-select" id="payment-select10"  style="opacity:0.8; filter:alpha(opacity=50);">
+                  <span class="input-label">Select</span>
+                  
+                  <select ng-model="payment" ng-change="Updatedpayment(payment)">
+                    <option value="credit">Credit card</option>
+                    <option value="debit">Debit card</option>
+                    <option value="paypal">Paypal</option>
+                  </select>
+            
+            </label>
+<!--        </div>-->
+
+    </ion-content>
+    
+    <ion-fixed-content>
+        <div style="position: fixed; bottom: 10px; left: 10px; right: 10px; width: 90%; align: center">
+            <a ui-sref="orderDetail" id="payment-button18" class="button button-large button-block button-stable button-outline">Next</a>
+        </div>
+    </ion-fixed-content>
+    
+</ion-view>

@@ -1,0 +1,16 @@
+<ion-view title="Previouse order">
+    <ion-nav-buttons side="right" class="has-header">
+        <button ng-click="backhome()" class="button icon ion-android-home"></button>
+    </ion-nav-buttons>
+    <ion-content padding="true" class="has-header">
+
+        <ion-list>
+            <div ng-repeat="item in theorders">
+                <ion-item ng-href="#/previousorderdetail/{{$index}}">
+                    {{item.OrderID}}
+                </ion-item>
+            </div>
+        </ion-list>
+        <!--<a ui-sref="complete" class="button button-positive  button-block">Confirm</a>-->
+    </ion-content>
+</ion-view>

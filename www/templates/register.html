@@ -1,0 +1,39 @@
+<ion-view title="Register" id="register">
+    <ion-nav-buttons side="right" class="has-header">
+        <button ng-click="backhome()" class="button icon ion-android-home"></button>
+    </ion-nav-buttons>
+
+    <ion-content padding="true" class="has-header">
+
+        <div class="spacer" style="width: 300px; height: 37px;"></div>
+        <form id="registercus" class="list" style="opacity:0.5; filter: alpha(opacity=50);">
+            <label class="item item-input" id="username" style="opacity:1; filter: alpha(opacity=100);">
+        <span class="input-label" style="opacity:1; filter: alpha(opacity=100);">Username</span>
+        <input var="name" type="text" placeholder="Judy Lawrence" ng-model="username" ng-change="Updatedusername(username)">
+      </label>
+
+            <div class="spacer" style="width: 300px; height: 9px;"></div>
+            <label class="item item-input" id="password">
+        <span class="input-label">Phonenumber</span>
+        <input type="text" placeholder="089-253-20xx" ng-model="phonenum" ng-change="Updatedphonenum(phonenum)" >
+      </label>
+
+
+            <div class="spacer" style="width: 300px; height: 9px;"></div>
+            <label class="item item-input" id="password">
+        <span class="input-label">Password</span>
+        <input type="password" placeholder="xxxxxx" ng-model="password" ng-change="Updatedpassword(password)" >
+      </label>
+
+        </form>
+        <div class="spacer" style="width: 300px; height: 21px;"></div>
+
+    </ion-content>
+    
+    <ion-fixed-content>
+        <div style="position: fixed; bottom: 10px; left: 10px; right: 10px; width: 90%; align: center">
+            <button ng-click="submitRegister()" id="editInformation-button20" class="button button-large button-block button-stable button-outline">Confirm</button>
+        </div>
+    </ion-fixed-content>
+    
+</ion-view>

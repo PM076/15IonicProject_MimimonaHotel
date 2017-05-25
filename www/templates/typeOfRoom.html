@@ -1,0 +1,166 @@
+<ion-view title="Type of room" id="page2">
+    <ion-nav-buttons side="right" class="has-header">
+        <button ng-click="backhome()" class="button icon ion-android-home"></button>
+    </ion-nav-buttons>
+    <ion-content padding="true" class="has-header">
+        <form id="typeOfRoom-form1" class="card" style="opacity:0.8; filter:alpha(opacity=50);">
+            <label class="item item-select" id="typeOfRoom-select1">
+                <span class="input-label">Type of room</span>
+                <select ng-model="typeOfroom" ng-change="selectUpdated(typeOfroom)">
+                    <option value="Standard">Standard room</option>
+                    <option value="Suit">Suite room</option>
+                    <option value="Deluxe">Deluxe room</option>
+                </select>
+            </label>
+        </form>
+
+        <div class="card item-wrapper" ng-if="typeOfroom =='Standard'"  style="opacity:0.8; filter:alpha(opacity=50); padding: 20px">
+
+            <label class="item item-select" id="typeOfRoom-select2" style="opacity:1; filter:alpha(opacity=100);">
+                <span class="input-label"  style="opacity:1; filter:alpha(opacity=100);">Floor</span>
+                <select ng-model="optionSelectedfloor" ng-change="selectUpdatedfloor(optionSelectedfloor)">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </label>
+            <br>
+            <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider3" delegate-handle="slider3" id="typeOfRoom-slider3" style="width:calc(100% + 20px);height:200px;margin-left:-10px;">
+                <ion-slide-page id="typeOfRoom-slide210" style="background:url(img/room/Standard/bedroom/standard1.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+                <ion-slide-page id="typeOfRoom-slide211" style="background:url(img/room/Standard/bedroom/standard2.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+                <ion-slide-page id="typeOfRoom-slide212" style="background:url(img/room/Standard/bathroom/bathroom.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+            </ion-slides>
+
+            <br>
+            <div id="orderDetail-markdown14" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">-One king-size bed, or as a double, with two queen beds.</p>
+            </div>
+            <div id="orderDetail-markdown15" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">-Television, coffee maker, telephone, desk, closet and private bathroom.</p>
+            </div>
+            <div id="orderDetail-markdown16" class="show-list-numbsuiters-and-dots"></div>
+            <div class="spacer" style="width: 268px; height: 15px;"></div>
+            <div id="orderDetail-markdown17" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;font-size:15px;">Total Price: 4,000 Baht</p>
+            </div>
+        </div>
+
+        <div class="card item-wrapper" ng-if="typeOfroom=='Suit'" style="opacity:0.8; filter:alpha(opacity=50); padding: 20px">
+            <label class="item item-select" id="typeOfRoom-select2">
+                <span class="input-label">Floor</span>
+                <select ng-model="optionSelectedfloor" ng-change="selectUpdatedfloor(optionSelectedfloor)">
+                    <option value="2">2</option>
+                    <option value="3">3</opvalue="" tion>
+                        <option value="4">4</option>
+                </select>
+            </label>
+            <br>
+            <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider3" delegate-handle="slider3" id="typeOfRoom-slider3" style="width:calc(100% + 20px);height:200px;margin-left:-10px; opacity:0.8; filter:alpha(opacity=50); padding: 20px">
+                <ion-slide-page id="typeOfRoom-slide210" style="background:url(img/Room/Sutie/Bedroom/Sutiebedroom1.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+                <ion-slide-page id="typeOfRoom-slide211" style="background:url(img/Room/Sutie/Bedroom/Sutiebedroom2.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+                <ion-slide-page id="typeOfRoom-slide212" style="background:url(img/Room/Sutie/Bathroom/Sutiebedroombathroom.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+                <ion-slide-page id="typeOfRoom-slide213" style="background:url(img/Room/Sutie/Bathroom/Sutiebathroom2.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+                <ion-slide-page id="typeOfRoom-slide213" style="background:url(img/Room/Sutie/Bathroom/Sutiebathroom3.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+            </ion-slides>
+            <br>
+            <div id="orderDetail-markdown14" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">- Room Amenities : Non Smoking Room, Big Standing-Shower for King-Side-Bed Rooms. </p>
+            </div>
+            <div id="orderDetail-markdown15" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">- Big Jacuzzi Bathtub with Shower for Twin bed rooms, Cable TV, Hair Dryer, Slippers, Bathrooms amenities.</p>
+            </div>
+            <div id="orderDetail-markdown15" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">- Phone Extension in Bathrooms, Stocked Mini Bar, Armchairs, Coffee/Tea making facilities, Electronic Safe, Bathrobes, International Direct Dial, Private Balcony, Working Desk, Free Wi-Fi Internet Connection, Bigger living room.</p>
+            </div>
+            <div id="orderDetail-markdown15" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">- International Direct Dial, Private Balcony, Working Desk, Free Wi-Fi Internet Connection, Bigger living room.</p>
+            </div>
+            <div id="orderDetail-markdown16" class="show-list-numbers-and-dots"></div>
+            <div class="spacer" style="width: 268px; height: 15px;"></div>
+            <div id="orderDetail-markdown17" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;font-size:15px;">Total Price: 5,000 Baht</p>
+            </div>
+        </div>
+
+        <div class="card item-wrapper" ng-if="typeOfroom=='Deluxe'" style="opacity:0.8; filter:alpha(opacity=50); padding: 20px">
+
+            <label class="item item-select" id="typeOfRoom-select2">
+                <span class="input-label">Floor</span>
+                <select ng-model="optionSelectedfloor" ng-change="selectUpdatedfloor(optionSelectedfloor)">
+                        <option value="4">4</option>
+                </select>
+            </label>
+            <br>
+            <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider3" delegate-handle="slider3" id="typeOfRoom-slider3" style="width:calc(100% + 20px);height:200px;margin-left:-10px;">
+                <ion-slide-page id="typeOfRoom-slide210" style="background:url(img/Room/DeluxRoom/Bedroom/deluxe.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+                <ion-slide-page id="typeOfRoom-slide211" style="background:url(img/Room/DeluxRoom/Bedroom/deluxe2.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+                <ion-slide-page id="typeOfRoom-slide212" style="background:url(img/Room/DeluxRoom/Bedroom/deluxe3.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+                <ion-slide-page id="typeOfRoom-slide213" style="background:url(img/Room/DeluxRoom/Bathroom/deluxebathroom.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+                <ion-slide-page id="typeOfRoom-slide213" style="background:url(img/Room/DeluxRoom/Bathroom/deluxebathroom2.jpg) no-repeat center;background-size:cover;"></ion-slide-page>
+            </ion-slides>
+            <br>
+            <div id="orderDetail-markdown14" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">- In-room amenities include: Room Features, In-room tea and coffee, Writing desk, Personal safe, Minibar, Refrigerator. </p>
+            </div>
+            <div id="orderDetail-markdown15" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">- Electronic key card access, Air conditioning with individual controls, Ironing board and iron (on request).</p>
+            </div>
+            <div id="orderDetail-markdown15" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">- Communication & Technology, Free WiFi, IDD Call, Entertainment, DVD player, 32-inch LCD TV.</p>
+            </div>
+            <div id="orderDetail-markdown15" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;">- Cable and international satellite channels, Bathroom Facilities, Rain showe, Hairdryer.</p>
+            </div>
+            <div id="orderDetail-markdown16" class="show-list-numbers-and-dots"></div>
+            <div class="spacer" style="width: 268px; height: 15px;"></div>
+            <div id="orderDetail-markdown17" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;font-size:15px;">Total Price: 8,000 Baht</p>
+            </div>
+        </div>
+        <!--<form id="typeOfRoom-form4" class="list">
+      <label class="item item-select" id="typeOfRoom-select3">
+        <span class="input-label">Amount of room</span>
+        <select>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </label>
+    </form>-->
+        <!--<ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider3" delegate-handle="slider3" id="typeOfRoom-slider3" style="width:calc(100% + 20px);height:200px;margin-left:-10px;">
+
+      <ion-slide-page id="typeOfRoom-slide210" style="background:url(&quot;img/aHR0cDovL3AzLmlzYW5vb2suY29tL3RyLzAvdWQvMjc5LzEzOTc3NDEvYmVkcm9vbS5qcGc.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      <ion-slide-page id="typeOfRoom-slide211" style="background:url(&quot;img/standard-room.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      <ion-slide-page id="typeOfRoom-slide212" style="background:url(&quot;img/deluxe-room_1.jpg&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      <ion-slide-page id="typeOfRoom-slide213" style="background:url(&quot;img/d71f79e1e76221f35f5911488aeb8f0c.jpg&quot;) no-repeat center;background-size:cover;">
+    
+        <h1 id="typeOfRoom-heading3" style="color:#000000;">Slide 4</h1>
+      </ion-slide-page>
+    </ion-slides>
+    
+    <div id="typeOfRoom-markdown1" class="show-list-numbers-and-dots"></div>
+    <form id="typeOfRoom-form3" class="list">
+      <div class="item item-body" id="typeOfRoom-list-item-container2">
+        <div id="typeOfRoom-markdown6" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;font-size:20px;">Standard room</p>
+        </div>
+        <div id="typeOfRoom-markdown8" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">-One king-size bed, or as a double, with two queen beds.</p>
+        </div>
+        <div id="typeOfRoom-markdown9" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">-Television, coffee maker, telephone, desk, closet and private bathroom.</p>
+        </div>
+        <div id="typeOfRoom-markdown10" class="show-list-numbers-and-dots">
+          <p style="margin-top:0px;color:#000000;">Price: 5,000 Baht</p>
+        </div>
+      </div>
+    </form>-->
+    <button ui-sref="payment" id="typeOfRoom-button10" class="button button-large button-block button-stable button-outline">Next</button>
+    
+     
+    </ion-content>
+
+    
+
+</ion-view>

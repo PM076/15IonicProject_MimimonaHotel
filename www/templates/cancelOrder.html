@@ -1,0 +1,23 @@
+<ion-view title="Confirm order">
+  <ion-content padding="true" class="has-header">
+<ion-nav-buttons  side="right">
+      <a ng-click="onShowDeleteIcons()" ng-if="cart.length" class="button button-icon icon ion-minus-circled"></a>
+    </ion-nav-buttons>
+
+   <ion-list show-delete="showDelete">
+      <ion-item ng-repeat="item in cart" type="item-text-wrap"  class="item-thumbnail-left item-remove-animate">
+        <ion-delete-button ng-click="removeCart($event,item)" class="ion-minus-circled"></ion-delete-button>
+      </ion-list>
+  <ion-list>
+    <ion-item ng-repeat="item in orderHistory" type="item-text-wrap"  class=" item-remove-animate">
+    {{item.orderno}}
+    </ion-item>
+  </ion-list>
+  
+    <!--<form class="list">
+      <ion-checkbox>Order No. MM3719</ion-checkbox>
+      <div class="spacer" style="height: 235.455px;"></div>
+    </form>-->
+    <a ui-sref="complete" class="button button-positive  button-block">Cancel</a>
+  </ion-content>
+</ion-view>

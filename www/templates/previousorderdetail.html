@@ -1,0 +1,95 @@
+<ion-view title="Detail {{OrderID}}">
+    <ion-nav-buttons side="right" class="has-header">
+        <button ng-click="backhome()" class="button icon ion-android-home"></button>
+    </ion-nav-buttons>
+    <ion-content padding="true" class="has-header">
+        
+        <div class="spacer" style="width: 300px; height: 20px;"></div>
+
+        <div class="item item-body" id="theorderDetail-list-item-container3"  style="opacity:0.6; filter:alpha(opacity=50);">
+
+            <div id="theorderDetail-markdown13" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;font-size:20px;">Name: {{Username}}</p>
+            </div>
+
+            <div id="theorderDetail-markdown13" class="show-list-numbers-and-dots">
+                <p style="margin-top:0px;color:#000000;font-size:20px;">{{typeOfroom}} room</p>
+            </div>
+            <div ng-if="typeOfroom=='Standard'">
+                <div id="theorderDetail-markdown14" class="show-list-numbers-and-dots">
+                    <p style="margin-top:0px;color:#000000;">-One king-size bed, or as a double, with two queen beds.</p>
+                </div>
+                <div id="theorderDetail-markdown15" class="show-list-numbers-and-dots">
+                    <p style="margin-top:0px;color:#000000;">-Television, coffee maker, telephone, desk, closet and private bathroom.</p>
+                </div>
+                <div id="theorderDetail-markdown16" class="show-list-numbers-and-dots"></div>
+                <div class="spacer" style="width: 268px; height: 15px;"></div>
+                <div id="theorderDetail-markdown17" class="show-list-numbers-and-dots">
+                    <p style="margin-top:0px;color:#000000;font-size:15px;">Total Price: {{theorder.Price}} Baht</p>
+                </div>
+                <div>
+                    <p>Payment method: {{theorder.PaymentType}}</p>
+                </div>
+            </div>
+
+            <div ng-if="typeOfroom=='Suit'">
+                <div id="theorderDetail-markdown14" class="show-list-numbers-and-dots">
+                    <p style="margin-top:0px;color:#000000;">- Room Amenities : Non Smoking Room, Big Standing-Shower for King-Side-Bed Rooms. </p>
+                </div>
+                <div id="theorderDetail-markdown15" class="show-list-numbers-and-dots">
+                    <p style="margin-top:0px;color:#000000;">- Big Jacuzzi Bathtub with Shower for Twin bed rooms, Cable TV, Hair Dryer, Slippers, Bathrooms amenities.</p>
+                </div>
+                <div id="theorderDetail-markdown15" class="show-list-numbers-and-dots">
+                    <p style="margin-top:0px;color:#000000;">- Phone Extension in Bathrooms, Stocked Mini Bar, Armchairs, Coffee/Tea making facilities, Electronic Safe, Bathrobes, International Direct Dial, Private Balcony, Working Desk, Free Wi-Fi Internet Connection, Bigger living room.</p>
+                </div>
+                <div id="theorderDetail-markdown15" class="show-list-numbers-and-dots">
+                    <p style="margin-top:0px;color:#000000;">- International Direct Dial, Private Balcony, Working Desk, Free Wi-Fi Internet Connection, Bigger living room.</p>
+                </div>
+                <div id="theorderDetail-markdown16" class="show-list-numbers-and-dots"></div>
+                <div class="spacer" style="width: 268px; height: 15px;"></div>
+                <div id="theorderDetail-markdown17" class="show-list-numbers-and-dots">
+                    <p style="margin-top:0px;color:#000000;font-size:15px;">Total Price: {{theorder.Price}} Baht</p>
+                </div>
+                <div>
+                    <p>Payment method: {{theorder.PaymentType}}</p>
+                </div>
+            </div>
+
+            <div ng-if="typeOfroom=='Deluxe'">
+                <div id="theorderDetail-markdown14" class="show-list-numbers-and-dots">
+                    <p style="margin-top:0px;color:#000000;">- In-room amenities include: Room Features, In-room tea and coffee, Writing desk, Personal safe, Minibar, Refrigerator. </p>
+                </div>
+                <div id="theorderDetail-markdown15" class="show-list-numbers-and-dots">
+                    <p style="margin-top:0px;color:#000000;">- Electronic key card access, Air conditioning with individual controls, Ironing board and iron (on request).</p>
+                </div>
+                <div id="theorderDetail-markdown15" class="show-list-numbers-and-dots">
+                    <p style="margin-top:0px;color:#000000;">- Communication & Technology, Free WiFi, IDD Call, Entertainment, DVD player, 32-inch LCD TV.</p>
+                </div>
+                <div id="theorderDetail-markdown15" class="show-list-numbers-and-dots">
+                    <p style="margin-top:0px;color:#000000;">- Cable and international satellite channels, Bathroom Facilities, Rain showe, Hairdryer.</p>
+                </div>
+                <div id="theorderDetail-markdown16" class="show-list-numbers-and-dots"></div>
+                <div class="spacer" style="width: 268px; height: 15px;"></div>
+                <div id="theorderDetail-markdown17" class="show-list-numbers-and-dots">
+                    <p style="margin-top:0px;color:#000000;font-size:15px;">Total Price: {{8000*theorder.Price}} Baht</p>
+                </div>
+                <div>
+                    <p>Payment method: {{theorder.PaymentType}}</p>
+                </div>
+            </div>
+        </div>
+
+        <!--<form class="list">
+      <ion-checkbox>theorder No. MM3719</ion-checkbox>
+      <div class="spacer" style="height: 235.455px;"></div>
+    </form>-->
+        
+    </ion-content>
+    
+    
+    <ion-fixed-content>
+        <div style="position: fixed; bottom: 10px; left: 10px; right: 10px; width: 90%; align: center">
+            <a ui-sref="homepage" class="button button-large button-block button-stable button-outline">OK</a>
+        </div>
+    </ion-fixed-content>
+</ion-view>

@@ -1,0 +1,37 @@
+<ion-view title="Edit Information" id="page12">
+  <ion-nav-buttons side="right" class="has-header">
+    <button class="button icon ion-android-home"></button>
+  </ion-nav-buttons>
+
+  <ion-content padding="true" class="has-header">
+
+    <div class="spacer" style="width: 300px; height: 37px;"></div>
+    <form id="editInformation-form13" class="list">
+      <label class="item item-input" id="editInformation-input7">
+        <span class="input-label">Name</span>
+        <input var="name" type="text" placeholder="Judy Lawrence" ng-model="cusname" ng-change="Updatedcusname(cusname)">
+      </label>
+
+      <div class="spacer" style="width: 300px; height: 9px;"></div>
+      <label class="item item-input" id="editInformation-input8">
+        <span class="input-label">National ID</span>
+        <input type="number" placeholder="110256259854"  ng-model="nationalid" ng-change="Updatednationalid(nationalid)">
+      </label>
+
+      <div class="spacer" style="width: 300px; height: 9px;"></div>
+      <label class="item item-input" id="editInformation-input9">
+        <span class="input-label">Phone Number</span>
+        <input type="tel" placeholder="089-235-98XX" ng-model="phonenum" ng-change="Updatedphonenum(phonenum)">
+      </label>
+
+      <div class="spacer" style="width: 300px; height: 9px;"></div>
+      <label class="item item-input" id="editInformation-input10">
+        <span class="input-label">E-mail</span>
+        <input type="email" placeholder="judy@hotmail.com" ng-model="email" ng-change="Updatedemail(email)">
+      </label>
+      
+    </form>
+    <div class="spacer" style="width: 300px; height: 21px;"></div>
+    <a ui-sref="orderDetail" id="editInformation-button20" class="button button-positive  button-block">Confirm</a>
+  </ion-content>
+</ion-view>
